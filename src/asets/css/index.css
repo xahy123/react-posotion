@@ -1,0 +1,210 @@
+@import '//at.alicdn.com/t/font_890202_uul0mrc3mp.css';
+@import 'https://a.amap.com/jsapi_demos/static/demo-center/css/demo-center.css';
+
+@import "https://a.amap.com/jsapi_demos/static/demo-center/css/prety-json.css";
+.footer{
+	
+}
+.sad{
+	border:1px solid #200;
+	background: skyblue;
+	width: 60px;
+}
+.header{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	display: flex;
+	justify-content:space-around;
+}
+.header>span{
+	text-align: center;
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-end;
+}
+.read_span{
+	display: flex;
+	flex-direction:column;
+	text-decoration: none;
+}
+.read_span>b{
+	font-size: 30px;
+}
+/*APP.JS*/
+.app>h2{
+	text-align: center;
+	height: 60px;
+	line-height: 60px;
+	font-size: 27px;
+	background: skyblue;
+	color: white;
+	border-radius: 5px;
+}
+/*Scene.js  景点*/
+#container{
+	width:100%;
+	height: 600px;
+}
+.input-card{
+	position: fixed;
+	top: 70px;
+	right: 0;
+	height: 170px;
+	justify-content:space-between;
+}
+#container>.info{
+	z-index: 2;
+	position: fixed;
+	top: 30px;
+}
+#container>#panel{
+	z-index: 12;
+	position: fixed;
+	top: 1px;
+	bottom: 100px;
+}
+.amap-geo{
+	position: absolute;
+	right: 50px;
+	bottom: 110px;
+}
+.input-item{
+	z-index: 21000;
+}
+.amap_lib_placeSearch{
+	margin-top: 100px;
+}
+
+
+
+/*阅读界面*/
+.read{
+	/*position: fixed;
+	top: 50px;
+	bottom: 60px;
+	overflow:hidden;
+	overflow-y: auto;
+	margin-left: 7px;*/
+	position: fixed;
+  top: 60px;
+  bottom: 70px;
+  width: 100%;
+  overflow:hidden;
+}
+.read_content{
+	margin:0;
+	padding:10px 0 0 0;
+}
+.read_content>li{
+  list-style: none;
+}
+.drop-down{
+    position: absolute;
+    top:-50px;
+    left:0px;
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+    font-size:20px;
+    color:#CCC;
+    display: block;
+}
+.unrefresh{
+	display: none;
+}
+.read_text{
+	font-size: 25px;
+}
+video{
+	height: 300px;
+}
+.read>li>.header_img{
+	height: 65px;
+	width: 100%;
+}
+.header_img{
+	display: flex;
+	justify-content: flex-start;
+}
+.val_txt{
+	height: 40px;
+	width: 100%;
+	line-height: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+.val_txt>i{
+    font-size: 16px;
+}
+.val_txt>b{
+    font-size: 13px;
+}
+.read_contain{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.read_contain>span>img{
+	display: block;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+
+
+/*天气*/
+.weather{
+  width: 100%;
+  height: 100%;
+}
+h2{
+	margin: 0;
+}
+.wrapper{
+    position: fixed;
+    left: 0;
+    top: 100px;
+    bottom: 70px;
+    width: 100%;
+    overflow:hidden;
+    padding: 10px 10px 0 10px;
+}
+
+.content{
+	margin:0;
+	padding: 0;
+}
+.wrapper>ul>li{
+	list-style: none;
+}
+.weather_city{
+  width: 100%;
+  height: 30px;
+  background: #f0f0f0;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 22px;
+  line-height:30px;
+}
+.yesterday{
+	margin-top: 20px;
+	width:100%;
+	height: 180px;
+	background: #f0f0f0;
+	border-radius: 8px;
+  font-size: 20px;
+}
+.weather_type{
+	padding: 10px 10px 0px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.weather_t{
+	padding-left: 10px;
+}
+.weather_f{
+	padding-left: 10px;
+}
